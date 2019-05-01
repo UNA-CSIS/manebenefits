@@ -1,0 +1,132 @@
+<?php session_start() ?>
+
+<!DOCTYPE html>
+<!--
+Author: Milton Bain
+Purpose: This is a login HTML page for the admin to login. Note that users may
+	not be allowed to view this page.
+Permissions:
+	Admin:
+		Admins are able to login using this page.
+	Users:
+		Users may not be able to see this page.
+Input: Admin login information
+Output: N/A 
+
+Last Modified: 3/20/2019
+-->
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Imported for mobile device scaling -->
+	
+	<title> Administrator Login </title>
+<!--	<link rel="stylesheet" href="bootstrapStyle.css"> -->
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+    <body style="background-color:grey; height: 100%;">
+	
+
+		<div class="container-fluid h-100" style="background: #46166B"> <!-- PURPLE #46166B -->
+			<div class="page-header">
+				<h1>
+					<div class="d-flex justify-content-around" style="background: #DB9F11">  <!-- GOLD #DB9F11 -->
+						<div class="p-2"><img class="img-fluid p-1 d-none d-sm-block" src="Steele.png" alt="Steele"></div>
+							<div class="d-flex flex-column justify-content-center">
+								<div class="p-2 justify-content-center">
+									<form action="home.php" method="get">
+										<button type="submit" class="btn btn-link p-1 btn-md" style="background:#46166B; color:#DB9F11">Home</button>
+									</form>
+
+									<form action="home.php" method="get">
+										<button type="submit" class="btn btn-link p-1 btn-md" style="background:#46166B; color:#DB9F11">Careers</button>
+									</form>
+
+									<form action="home.php" method="get">
+										<button type="submit" class="btn btn-link p-1 btn-md" style="background:#46166B; color:#DB9F11">Partners</button>
+									</form>
+								</div>
+							</div>
+							<div class="d-flex flex-column justify-content-center">
+								<div class="p-2 m-n1 justify-content-center">
+									<form action="home.php" method="get">
+										<button type="submit" class="btn btn-link p-1 m-1 btn-md" style="background:#46166B; color:#DB9F11">Mane Benefits</button>
+									</form>
+
+									<form action="home.php" method="get">
+										<button type="submit" class="btn btn-link p-1 m-1 btn-md" style="background:#46166B; color:#DB9F11">Career Fairs</button>
+									</form>
+
+									<form action="home.php" method="get">
+										<button type="submit" class="btn btn-link p-1 m-1 btn-md" style="background:#46166B; color:#DB9F11">Info</button>
+									</form>
+								</div>	
+							</div>
+						<div class="d-flex p-5 m-n4">
+							<div class="d-flex m-n2">
+								<div class="p-2">
+									<a href="https://www.facebook.com/UNASALESCENTER/?fref=ts">
+										<img src="src/facebook.png" alt="facebook">
+									</a>
+									<a href="https://www.instagram.com/steele_sales/">
+										<img src="src/instagram.png" alt="instagram">
+									</a>
+									<a href="https://twitter.com/unaprosales">
+										<img src="src/twitter.png" alt="twitter">
+									</a>
+								</div>
+							</div>
+							<div class="d-flex m-n2">
+								<div class="p-2 ml-2">
+									<a href="https://www.linkedin.com/in/steele-center-for-professional-selling-76072484/">
+										<img src="src/linked.png" alt="Linkedin">
+									</a>
+									<a href="google.com">
+										<img src="src/contact.png" alt="contact">
+									</a>
+								</div>
+							</div>		
+						</div>
+					</div>
+				</h1>
+			</div>
+		</div>
+	
+	    <div  class="jumbotron d-flex align-items-center" style="background:transparent !important">
+			<div class="container bg-white text-dark d-flex flex-column pb-2">
+				<div class="justify-content-left align-self-center">
+		
+					<h1 class="display-4">Admin Login:</h1>
+					<br>
+					<form action="checkAdmin.php" method="post">
+						<p class="font-weight-bold">Username:</p> <input type="text" class="form-control" name="username" required autocomplete="off"> <br><br>
+						<p class="font-weight-bold">Password:</p> <input type="password" class="form-control" name="password" required autocomplete="off"> <br><br>
+						<button type="submit" class="btn btn-primary p-2"> Login </button> <br>
+					<br>
+					</form>
+
+					<form action="home.php" method="get">
+						<input type="submit" value="Return Home" name="Home" id="Home">
+					</form>
+		
+				</div>
+			</div>
+		</div>
+
+    </body>
+</html>

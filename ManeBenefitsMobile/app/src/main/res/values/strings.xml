@@ -1,0 +1,40 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="IP">192.168.1.103</string>
+    <string name="AppFolder">ManeBenefitsAndroid</string>
+    <string-array name="categories">
+        <item >Restaurants</item>
+        <item >Apparel</item>
+        <item >Services</item>
+        <item >Activities</item>
+        <item >Healthcare</item>
+        <item >Rentals</item>
+    </string-array>
+    <string-array name="menuItems">
+        <item>Register Card</item>
+        <item>Categories</item>
+        <item>Map</item>
+        <item>View Card</item>
+        <item>Help</item>
+    </string-array>
+    <string-array name="categoryMenuItems">
+        <item>Register</item>
+        <item>Map</item>
+        <item>Help</item>
+    </string-array>
+    <string-array name="apparel">
+        <item >Ichiban</item>
+    </string-array>
+    <string-array name="services">
+        <item >Ichiban</item>
+    </string-array>
+    <string-array name="activities">
+        <item >Ichiban</item>
+    </string-array>
+    <string-array name="healthcare">
+        <item >Ichiban</item>
+    </string-array>
+    <string-array name="rentals">
+        <item >Ichiban</item>
+    </string-array>
+</resources>
